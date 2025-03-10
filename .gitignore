@@ -1,0 +1,22 @@
+# Ignore system and OneDrive files
+.DS_Store
+Thumbs.db
+Desktop.ini
+OneDrive/
+NTUSER.DAT*
+AppData/
+anaconda3/
+eclipse-workspace/
+.conda/
+.ipython/
+.matplotlib/
+
+# Ignore Python cache & virtual environments
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
