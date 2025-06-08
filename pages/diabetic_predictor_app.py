@@ -1,4 +1,4 @@
-import pickle
+import joblib
 import pandas as pd
 import numpy as np
 import streamlit as st
@@ -104,8 +104,19 @@ with col7:
 with col8:
     glucose = st.number_input('Glucose Level', min_value=50, max_value=300, value=100)
 
-with open('pages/diabetes_model.pkl', 'rb') as f:
-    model, scaler = pickle.load(f)
+import os
+import joblib
+
+# Dapatkan path ke direktori file ini (pages/)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Buat path absolut ke model dan scaler
+model_path = os.path.join(current_dir, "diabetes_model.joblib")
+
+# Load model dan scaler
+model, scaler = joblib.load(open("pages/diabetes_model.joblib", "rb"))
+
+
 
 centered_button = st.columns(3)[1]
 with centered_button:
