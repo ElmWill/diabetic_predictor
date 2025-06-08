@@ -90,7 +90,7 @@ col3, col4 = st.columns(2)
 with col3:
     smoking = st.selectbox('Smoking History', list(smoking_mapping.keys()))
 with col4:
-    hypertension_choice = st.selectbox('Hypertension', ['Yes', 'No'])
+    hypertension_choice = st.selectbox('Hypertension', ['No', 'Yes'])
     hypertension = 1 if hypertension_choice == 'Yes' else 0
 
 col5, col6 = st.columns(2)
