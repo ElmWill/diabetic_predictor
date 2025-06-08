@@ -112,12 +112,13 @@ import joblib
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Buat path absolut ke model dan scaler
-model_path = os.path.join(current_dir, "diabetes_model.joblib")
+model_path = os.path.join(current_dir, "..", "model", "diabetes_model.joblib")
 
 # Load model dan scaler
-model, scaler = joblib.load(open("pages/diabetes_model.joblib", "rb"))
+model_path = os.path.normpath(model_path)
 
-
+with open(model_path, "rb") as f:
+    model, scaler = joblib.load(f)
 
 centered_button = st.columns(3)[1]
 with centered_button:
