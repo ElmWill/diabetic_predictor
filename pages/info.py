@@ -5,7 +5,7 @@ st.set_page_config(page_title="Information", page_icon="🩺", layout="wide")
 st.markdown("""
 <style>
 body {
-    background-color: #E5E1DA;
+    background-color: #FFF1D5;
 }
 
 .info-container {
@@ -15,7 +15,7 @@ body {
 }
 
 .info-card {
-    background-color: #E5E1DA;
+    background-color: #BDDDE4;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);

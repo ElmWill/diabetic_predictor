@@ -5,7 +5,7 @@ st.set_page_config(page_title="Tips for Diabetes", page_icon="🩺", layout="wid
 st.markdown("""
 <style>
 body {
-    background-color: #f7f9fc;
+    background-color: #FAE7C9;
 }
 
 .tip-container {
@@ -15,7 +15,7 @@ body {
 }
 
 .tip-card {
-    background-color: #E5E1DA;
+    background-color: #BDDDE4;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
